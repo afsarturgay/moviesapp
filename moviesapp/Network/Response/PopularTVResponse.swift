@@ -13,6 +13,7 @@ struct PopularTVResponse: Decodable {
 
 extension PopularTVResponse {
     struct TVShow: Decodable {
+        let id: Int
         let originalName: String
         let overview: String
         let voteAverage: Double
@@ -20,6 +21,7 @@ extension PopularTVResponse {
         let date: String
 
         enum CodingKeys: String, CodingKey {
+            case id
             case originalName
             case overview
             case voteAverage

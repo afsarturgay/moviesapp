@@ -20,7 +20,7 @@ protocol APIRequest {
 
 extension APIRequest {
     var encoding: URLEncoding {
-        .httpBody
+        .default
     }
 
     var data: Codable? {
