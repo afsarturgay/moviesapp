@@ -33,16 +33,9 @@ final class MovieListCell: UITableViewCell {
         dateLabel.text = presentation.date
         ratingView.text = presentation.rating
 
-        // TODO: - Move to extension or create Image provider
-        let url: URL = .init(string: "https://image.tmdb.org/t/p/w500" + presentation.imageURL)!
-        let urlRequest = URLRequest(url: url)
-        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            if let data {
-                DispatchQueue.main.async {
-                    self.posterImageView.image = UIImage(data: data)
-                }
-            }
-        }.resume()
+        ImageDataProvider.shared.image(from: presentation.imageURL) { [weak self] image in
+            self?.posterImageView.image = image
+        }
     }
 }
 
