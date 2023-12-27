@@ -178,3 +178,4 @@ Dependencies/
 
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,swiftpm,swiftpackagemanager,xcode,xcodeinjection,cocoapods,carthage,fastlane,bitrise,objective-c
+DerivedData
