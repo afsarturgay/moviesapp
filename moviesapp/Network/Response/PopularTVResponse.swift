@@ -17,5 +17,14 @@ extension PopularTVResponse {
         let overview: String
         let voteAverage: Double
         let posterPath: String
+        let date: String
+
+        enum CodingKeys: String, CodingKey {
+            case originalName
+            case overview
+            case voteAverage
+            case posterPath
+            case date = "firstAirDate"
+        }
     }
 }

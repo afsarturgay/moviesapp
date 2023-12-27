@@ -10,6 +10,12 @@ import Alamofire
 
 final class DataProvider: DataProviderProtocol {
 
+    public static var shared: DataProvider = .init()
+
+    private init() {
+
+    }
+
     public var baseURLString: String {
         NetworkConfiguration.apiBaseURLString
     }
