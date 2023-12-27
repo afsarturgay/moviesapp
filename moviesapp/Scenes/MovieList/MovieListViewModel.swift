@@ -60,7 +60,8 @@ final class MovieListViewModel: MovieListViewModelProtocol {
     }
 
     func didSelectMovie(atIndexPath indexPath: IndexPath) {
-        coordinator.showDetail()
+        let id = tvShows[indexPath.row].id
+        coordinator.showDetail(withId: id)
     }
 }
 

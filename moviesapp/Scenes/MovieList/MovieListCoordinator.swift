@@ -19,9 +19,9 @@ final class MovieListCoordinator {
         window.makeKeyAndVisible()
     }
 
-    func showDetail() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
-        navigationController?.pushViewController(viewController, animated: true)
+    func showDetail(withId id: Int) {
+        guard let navigationController else { return }
+        let detailCoordinator = MovieDetailCoordinator(navigationController: navigationController)
+        detailCoordinator.start(withId: id)
     }
 }

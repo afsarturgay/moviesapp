@@ -35,6 +35,9 @@
 		34D87E362B3C2DB700FF7E3A /* MovieListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E352B3C2DB700FF7E3A /* MovieListCoordinator.swift */; };
 		34D87E3A2B3C303100FF7E3A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E392B3C303100FF7E3A /* MovieDetailViewController.swift */; };
 		34D87E3C2B3C305200FF7E3A /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E3B2B3C305200FF7E3A /* MovieDetailViewModel.swift */; };
+		34D87E3E2B3C32C600FF7E3A /* TVDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E3D2B3C32C600FF7E3A /* TVDetailRequest.swift */; };
+		34D87E402B3C375B00FF7E3A /* MovieDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E3F2B3C375B00FF7E3A /* MovieDetailCoordinator.swift */; };
+		34D87E422B3C411500FF7E3A /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D87E412B3C411500FF7E3A /* ImageDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,9 @@
 		34D87E352B3C2DB700FF7E3A /* MovieListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCoordinator.swift; sourceTree = "<group>"; };
 		34D87E392B3C303100FF7E3A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		34D87E3B2B3C305200FF7E3A /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		34D87E3D2B3C32C600FF7E3A /* TVDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailRequest.swift; sourceTree = "<group>"; };
+		34D87E3F2B3C375B00FF7E3A /* MovieDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailCoordinator.swift; sourceTree = "<group>"; };
+		34D87E412B3C411500FF7E3A /* ImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 				348A36452B3B86F50006A59A /* Interceptors */,
 				348A36262B3B4C600006A59A /* DataProviderProtocol.swift */,
 				348A362A2B3B4CD30006A59A /* DataProvider.swift */,
+				34D87E412B3C411500FF7E3A /* ImageDataProvider.swift */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 			children = (
 				348A36242B3B4C1E0006A59A /* APIRequestProtocol.swift */,
 				348A363F2B3B5EBF0006A59A /* PopularTVRequest.swift */,
+				34D87E3D2B3C32C600FF7E3A /* TVDetailRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			children = (
 				34D87E392B3C303100FF7E3A /* MovieDetailViewController.swift */,
 				34D87E3B2B3C305200FF7E3A /* MovieDetailViewModel.swift */,
+				34D87E3F2B3C375B00FF7E3A /* MovieDetailCoordinator.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 			files = (
 				348A36342B3B5C4B0006A59A /* HTTPURLResponse+HTTPStatus.swift in Sources */,
 				348A36252B3B4C1E0006A59A /* APIRequestProtocol.swift in Sources */,
+				34D87E422B3C411500FF7E3A /* ImageDataProvider.swift in Sources */,
 				34D87E2C2B3B892700FF7E3A /* MovieListViewModel.swift in Sources */,
 				348A36292B3B4CAC0006A59A /* HTTPMethod.swift in Sources */,
 				34D87E3A2B3C303100FF7E3A /* MovieDetailViewController.swift in Sources */,
@@ -338,11 +348,13 @@
 				348A36442B3B81FF0006A59A /* Interceptor.swift in Sources */,
 				34D87E312B3C243900FF7E3A /* TVShowPresentation.swift in Sources */,
 				348A36472B3B87050006A59A /* APIKeyInterceptor.swift in Sources */,
+				34D87E3E2B3C32C600FF7E3A /* TVDetailRequest.swift in Sources */,
 				348A36302B3B4DB10006A59A /* Decodable+DataExtension.swift in Sources */,
 				348A364A2B3B87510006A59A /* NetworkConfiguration.swift in Sources */,
 				348A360F2B3B48AF0006A59A /* SceneDelegate.swift in Sources */,
 				34D87E3C2B3C305200FF7E3A /* MovieDetailViewModel.swift in Sources */,
 				34D87E2A2B3B890300FF7E3A /* MovieListViewController.swift in Sources */,
+				34D87E402B3C375B00FF7E3A /* MovieDetailCoordinator.swift in Sources */,
 				348A36422B3B5F220006A59A /* PopularTVResponse.swift in Sources */,
 				348A363B2B3B5D820006A59A /* ErrorResponse.swift in Sources */,
 			);
