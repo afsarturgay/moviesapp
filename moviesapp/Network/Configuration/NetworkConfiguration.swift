@@ -13,4 +13,6 @@ enum NetworkConfiguration {
 
     // TODO: - move to more secure field or add obfuscator
     static let token: String = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZDUwOWFkYzU1ZjhlYzU1MzViYzFlNWNhOGU0NzlhMSIsInN1YiI6IjU5NjVmZDJiYzNhMzY4MjkzYjEyZjcyNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.107MCf8fvV99XWDBwFkPs5jBK387TgNChirG7mLZIzY"
+
+    static let cdnImageURLString: String = "https://image.tmdb.org/t/p/w500"
 }
